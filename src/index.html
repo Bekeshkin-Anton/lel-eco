@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Бесплатно приедем и заберем бытовую технику в любом состоянии. Заплатим от 100 до 3000 рублей в зависимости от условий."
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" sizes="32x32" href="https://acdn.tinkoff.ru/params/common_front/resourses/icons/favicon-32x32.png" />
+    <title>Лель-ЭКО | Покупка и утилизация бытовой техники</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__elem"><img src="./img/logo.png" alt="logo" /></div>
+      <nav class="nav">
+        <ul>
+          <li class="nav__elem"><a href="#why-we">Почему мы?</a></li>
+          <li class="nav__elem"><a href="#individuals">Физ. лицам</a></li>
+          <li class="nav__elem"><a href="#legal-entities">Юр. лицам</a></li>
+          <li class="nav__elem"><a href="#reviews">Отзывы</a></li>
+          <li class="nav__elem"><a href="#map">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__elem">
+        <div class="header__elem_phone">
+          <a class="orange-border-bottom" href="tel:+79117112913">+7 (911) 711-29-13</a>
+          <p class="min-text">С 11:00 до 19:00 Пн-Пт</p>
+        </div>
+      </div>
+      <div class="header__elem">
+        <div class="header__elem_timetable">
+          <button class="header-popup-btn" id="popup-open-btn">Обратный звонок</button>
+          <p class="min-text"></p>
+          СПБ и Лен. область
+        </div>
+      </div>
+    </header>
+    <div class="popup" id="popup">
+      <form action="#" class="form" id="popupForm">
+        <fieldset>
+          <img src="./img/popup.jpg" alt="popup" />
+          <h2>Обратный звонок</h2>
+          <p>Отправьте заявку и мы обязательно перезвоним вам!</p>
+          <input class="_popup-req _req _name" type="text" placeholder="Ваше имя" />
+          <input class="_popup-req _req _tel" type="tel" data-tel-input placeholder="Номер телефона" />
+          <button id="popup-send-btn" type="submit">Отправить заявку</button>
+          <button class="close-btn" id="close-btn"><img src="./img/close-ios.svg" alt="close" /></button>
+        </fieldset>
+      </form>
+    </div>
+
+    <section class="main-screen" id="main-screen">
+      <div class="main-screen__left-side">
+        <h1 class="main-screen__title">
+          Бесплатно <br />
+          <span>Приедем и заберём бытовую технику</span>
+        </h1>
+        <p class="main-screen__offer">Заплатим после оценки техники <span class="main-screen__offer_arrow">→</span></p>
+        <div class="main-screen__description">
+          <p>
+            Работаем с частными и юридическими лицами в Санкт-Петербурге и Ленинградской области. Отвечаем оперативно и можем заранее
+            обсудить детали вывоза и сумму.
+          </p>
+        </div>
+      </div>
+      <div class="main-screen__rigth-side">
+        <form action="#" class="form" id="form-1">
+          <fieldset>
+            <legend>Отправьте заявку</legend>
+            <p>Наши специалисты готовы оценить и вывезти вашу технику в любое удобное для вас время.</p>
+            <input type="text" class="_req _name" placeholder="Имя" />
+            <input type="tel" data-tel-input class="_tel _req" placeholder="Телефон" />
+            <input class="_email" type="email" placeholder="E-MAIL" />
+            <button id="form-1-btn" type="submit">ОТПРАВИТЬ</button>
+            <p>Оставляйте заявку на сайте, звоните по телефону или пишите!</p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="why-we" id="why-we">
+      <h2 class="why-we__title">Почему мы?</h2>
+      <div class="why-we__content">
+        <div class="card" id="card_1">
+          <img src="./img/card-1.svg" alt="card-1" class="card__img" />
+          <p class="card__num">- 1 -</p>
+          <h3 class="card__title">Скорость работы</h3>
+          <p class="card__description">Сделаем всё оперативно и в сжатые сроки</p>
+        </div>
+        <div class="card" id="card_2">
+          <img src="./img/card-2.svg" alt="card-2" class="card__img" />
+          <p class="card__num">- 2 -</p>
+          <h3 class="card__title">Локация</h3>
+          <p class="card__description">Охватываем все районы Санкт-Петербурга и Ленинградской области</p>
+        </div>
+        <div class="card" id="card_3">
+          <img src="./img/card-3.svg" alt="card-3" class="card__img" />
+          <p class="card__num">- 3 -</p>
+          <h3 class="card__title">Клиенты</h3>
+          <p class="card__description">Сотрудничаем с физическими и юридическими лицами</p>
+        </div>
+        <div class="card" id="card_4">
+          <img src="./img/card-4.svg" alt="card-4" class="card__img" />
+          <p class="card__num">- 4 -</p>
+          <h3 class="card__title">Пунктуальность</h3>
+          <p class="card__description">У нас работают вежливые сотрудники и аккуратные рабочие</p>
+        </div>
+      </div>
+    </section>
+    <section class="why-we__second" id="why-we__second">
+      <div class="why-we__second-card" id="card_5">
+        <img src="./img/partners-l.png" alt="card-4" class="why-we__second-card-img" />
+        <p class="why-we__second-card-num card__num">- 5 -</p>
+        <h3 class="why-we__second-card-title">ВЗАИМОВЫГОДНОЕ СОТРУДНИЧЕСТВО</h3>
+        <p class="why-we__second-card-description">
+          Вы получаете деньги –<br />
+          Мы получаем технику
+        </p>
+      </div>
+      <img src="./img/yellow-arrow.svg" alt="arrow" class="yellow-arrow" />
+      <button class="why-we__second-btn" id="popup-open-btn2">оставить запрос</button>
+    </section>
+    <section class="why-we__third" id="why-we__third">
+      <h2 class="why-we__title">Порядок работ</h2>
+      <div class="why-we__third_cards">
+        <div class="why-we__third_cards-elem">
+          <img src="./img/work-stages-card-1.png" alt="work-1" class="why-we__third-card-img card__img" />
+          <h3 class="why-we__third-card-title">Оставляете запрос</h3>
+          <p class="why-we__third-card-description">
+            Свяжитесь с нами любым удобным способом: заполните форму на сайте, позвоните или отправьте email
+          </p>
+        </div>
+        <div class="dotted">
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+        </div>
+        <div class="why-we__third_cards-elem">
+          <img src="./img/work-stages-card-2.png" alt="work-stages-card-2" class="why-we__third-card-img card__img" />
+          <h3 class="why-we__third-card-title">Уточняем детали</h3>
+          <p class="why-we__third-card-description">
+            Подробно изучаем ваш конкретный случай, производим оценку. Заранее выберем удобное для встречи время
+          </p>
+        </div>
+        <div class="dotted">
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+        </div>
+        <div class="why-we__third_cards-elem">
+          <img src="./img/work-stages-card-3.png" alt="work-3" class="why-we__third-card-img card__img" />
+          <h3 class="why-we__third-card-title">Контрольный звонок</h3>
+          <p class="why-we__third-card-description">Предварительно созвонимся в согласованный день и время</p>
+        </div>
+        <div class="dotted">
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+          <div class="dotted__elem"></div>
+        </div>
+        <div class="why-we__third_cards-elem">
+          <img src="./img/work-stages-card-4.png" alt="work-4" class="why-we__third-card-img card__img" />
+          <h3 class="why-we__third-card-title">Сделка и получение оплаты</h3>
+          <p class="why-we__third-card-description">
+            Наша команда приедет и заберет вашу технику. <br />Оплатим сразу же согласно всем договоренностям
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="individuals" id="individuals">
+      <h2 class="individuals__title">Частным лицам</h2>
+      <p class="individuals__description">
+        Вам не придется самим выкидывать старую технику – мы бесплатно приедем и заберем её в любом состоянии. А также заплатим от 100 до
+        3000 ₽ в зависимости от оценки.
+      </p>
+      <div class="individuals__grid">
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/1.png" alt="1" class="grig-elem-img" />
+          <p class="grid-elem-text">Холодильники</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/2.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Морозильные камеры</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/3.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Плиты газовые и электрические</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/4.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Стиральные машины</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/5.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Посудомоечные машины</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/6.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Кондиционеры</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/7.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Сплит системы</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/8.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Кофеварки и чайники</p>
+        </div>
+        <div class="individuals__grid_elem">
+          <img src="./img/grid1/9.png" alt="" class="grig-elem-img" />
+          <p class="grid-elem-text">Микроволновые печи</p>
+        </div>
+      </div>
+      <p class="individuals__offer">
+        Полный список всей бытовой техники и подробные условия узнавайте по телефону +7 (812) 424-5890 или пишите на почту
+        <a href="mailto:skupka.leleko@yandex.ru?subject=Новая заявка" class="orange-border-bottom">skupka.leleko@yandex.ru</a>
+      </p>
+    </section>
+    <section class="individuals-form-wrap">
+      <form action="#" class="individuals-form form" id="form-2">
+        <fieldset>
+          <legend>Закажите обратный звонок</legend>
+          <p>Наш менеджер свяжется с вами для расчета стоимости.</p>
+          <div class="inputs-wrap">
+            <input type="text" class="_req _name" placeholder="Ваше имя" /><input
+              type="tel"
+              data-tel-input
+              maxlength="10"
+              class="_tel _req"
+              placeholder="Ваш телефон"
+            />
+            <button type="submit">ОТПРАВИТЬ</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <section class="legal-entities" id="legal-entities">
+      <h2 class="legal-entities__title">Юридическим лицам</h2>
+      <p class="legal-entities__description">
+        Наша компания имеет все необходимые для работы лицензии и сертификаты. Работаем как с большими, так и с малыми предприятими.
+      </p>
+      <div class="legal-entities__grid">
+        <div class="entities-grid">
+          <div class="entities-grid__content">
+            <h3 class="entities-grid__content_title">Работаем по договору</h3>
+            <p class="entities-grid__content_description">
+              Все работы выполняются с соблюдением требований действующего законодательства Российской Федерации.
+            </p>
+          </div>
+          <img src="./img/grid2/11.png" alt="1" class="entities-grid__img" />
+        </div>
+        <div class="entities-grid">
+          <div class="entities-grid__content">
+            <h3 class="entities-grid__content_title">Выгодные условия сотрудничества</h3>
+            <p class="entities-grid__content_description">Рассматриваем специальные условия и предложения при долгосрочных контрактах.</p>
+          </div>
+          <img src="./img/grid2/12.png" alt="2" class="entities-grid__img" />
+        </div>
+        <div class="entities-grid">
+          <div class="entities-grid__content">
+            <h3 class="entities-grid__content_title">Готовы бесплатно забирать технику</h3>
+            <p class="entities-grid__content_description">В рамках транспортных партий и других договоренностей.</p>
+          </div>
+          <img src="./img/grid2/13.png" alt="3" class="entities-grid__img" />
+        </div>
+        <div class="entities-grid">
+          <div class="entities-grid__content">
+            <h3 class="entities-grid__content_title">Стоимость покупки обсуждается индивидуально</h3>
+            <p class="entities-grid__content_description">Персональный подход к каждому клиенту.</p>
+          </div>
+          <img src="./img/grid2/14.png" alt="4" class="entities-grid__img" />
+        </div>
+      </div>
+    </section>
+    <section class="legal-entities-form-wrap t-cover">
+      <form action="#" class="legal-entities-form-form form" id="form-3">
+        <fieldset>
+          <legend>
+            Нельзя загрязнять окружающую <br />
+            среду вредными отходами!
+          </legend>
+          <p>Соблюдайте законы и берегите природу! А мы позаботимся о правильном вывозе и утилизации бытовой техники и прочего мусора</p>
+          <div class="inputs-wrap">
+            <input type="tel" data-tel-input maxlength="10" class="_tel _req" placeholder="Ваш телефон" />
+            <button type="submit">Заказать вывоз</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <section class="reviews" id="reviews">
+      <h2 class="reviews__title">Отзывы наших клиентов</h2>
+      <p class="reviews__description">
+        Мы рады видеть ваши отзывы. Отправляйте на нашу почту
+        <a href="mailto:skupka.leleko@yandex.ru?subject=Новый отзыв" class="orange-border-bottom">skupka.leleko@yandex.ru</a>
+      </p>
+      <div class="reviews-grid">
+        <div class="reviews-grid__elem">
+          <div class="reviews-grid__elem_content">
+            <p class="reviews-grid__elem_content-reviews">
+              Мы задумали ремонт на кухне, и от старой бытовой техники нужно было избавиться. Заниматься продажей на авито было некогда,
+              поэтому решили воспользоваться услугой вывоза от Лельэко. Оставили заявку на сайте и уже на следующей день радовались
+              свободному пространству. Ремонт можно было начинать. Еще и вклад в бюджет получили! Спасибо!
+            </p>
+          </div>
+          <!-- <div class="reviews-grid__elem_content-bottom"></div> -->
+          <div class="reviews-grid__elem_person">
+            <h4 class="reviews-grid__elem_person-name">Настя Корнеева</h4>
+            <span class="reviews-grid__elem_person-job">Частное лицо / холодильник и кухонная техника</span>
+          </div>
+        </div>
+        <div class="reviews-grid__elem">
+          <div class="reviews-grid__elem_content">
+            <p class="reviews-grid__elem_content-reviews">
+              Руководство поставило задачу реновации склада с морозильными камерами. Часть нужно было отправить в другой город коллегам, а
+              часть выкинуть. Бюджета на вызов машин, погрузку и отправку на свалку не хватало, но нам повезло. Знакомые подсказали
+              посмотреть ваш сайт и как результат - мы сэкономили деньги компании. Ребята все быстро организовали, за день все вывезли и
+              освободили наш склад. Выражаю благодарность от всего коллектива!
+            </p>
+          </div>
+
+          <!-- <div class="reviews-grid__elem_content-bottom"></div> -->
+          <div class="reviews-grid__elem_person">
+            <h4 class="reviews-grid__elem_person-name">ООО «Холодмикс»</h4>
+            <span class="reviews-grid__elem_person-job">Юридическое лицо / морозильные камеры</span>
+          </div>
+        </div>
+        <div class="reviews-grid__elem">
+          <div class="reviews-grid__elem_content">
+            <p class="reviews-grid__elem_content-reviews">
+              Заказали новую стиральную машину и пока ждали доставку, нужно было вывезти старую. У нас был только день на это, и мы
+              справились вместе с «Лель-Эко». Уже не первый раз пользуемся услугой вывоза и утилизации старой бытовой техники. До этого
+              ребята забирали у нас сломанную посудомоечную машину. Рекомендуем. Быстро и выгодно!
+            </p>
+          </div>
+
+          <!-- <div class="reviews-grid__elem_content-bottom"></div> -->
+          <div class="reviews-grid__elem_person">
+            <h4 class="reviews-grid__elem_person-name">Саша и Ольга Барасовы</h4>
+            <span class="reviews-grid__elem_person-job">Частное лицо / стиральная машина</span>
+          </div>
+        </div>
+        <div class="reviews-grid__elem">
+          <div class="reviews-grid__elem_content">
+            <p class="reviews-grid__elem_content-reviews">
+              «Лента» выражает благодарность в помощи по утилизации старых электрических печей и духовых шкафов, которые находились на кухне
+              наших гипермаркетов. Несмотря на большой объем работ, сотрудники «Лель-ЭКО» справились в короткий срок без накладок.
+            </p>
+          </div>
+
+          <!-- <div class="reviews-grid__elem_content-bottom"></div> -->
+          <div class="reviews-grid__elem_person">
+            <h4 class="reviews-grid__elem_person-name">ООО «Лента»</h4>
+            <span class="reviews-grid__elem_person-job">Юридическое лицо / электрические печи и духовые шкафы</span>
+          </div>
+        </div>
+      </div>
+      <div class="shape-border_bottom" data-fill-color="#f26522" style="display: block">
+        <svg
+          class="t796__svg"
+          style="height: 4vw; fill: #f26522"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1280 200"
+          preserveAspectRatio="none"
+        >
+          <path d="M1280 200H0V0l1280 195.5v4.5z"></path>
+        </svg>
+      </div>
+    </section>
+    <section class="map" id="map">
+      <!-- <div class="map-content">
+        <h3 class="map-content__title">Контакты</h3>
+        <a href="tel:+79117112913" class="map-content__phone">Тел: +7 (911) 711-29-13</a>
+        <p class="map-content__adress">Адрес: 194017, г. Санкт-Петербург, пр-кт Энгельса, д. 50, пом. 3Н</p>
+      </div> -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.152758697991!2d30.318413826402818!3d60.012541913694356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469634707921b34d%3A0x5a15c39bf8cc7cd4!2z0L_RgC3Rgi4g0K3QvdCz0LXQu9GM0YHQsCwgNTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTQwMTc!5e0!3m2!1sru!2sru!4v1660986281307!5m2!1sru!2sru"
+        width="100%"
+        height="580"
+        style="border: 0"
+        allowfullscreen="true"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-content-copyright">© 2022 Лель-ЭКО: покупка и утилизация бытовой техники</p>
+        <nav class="footer-content-nav">
+          <ul>
+            <li><a href="#individuals">Физ. лицам</a></li>
+            <li><a href="#legal-entities">Юр. лицам</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#map">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="footer-content-btn">
+          К началу
+          <span
+            ><svg width="5px" height="17px" viewBox="0 0 6 20" version="1.1">
+              <defs></defs>
+              <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="Desktop-HD-Copy-39" sketch:type="MSArtboardGroup" transform="translate(-569.000000, -1797.000000)" fill="#ffffff">
+                  <path
+                    d="M565.662286,1804.2076 L562.095536,1806.87166 C561.958036,1807.00916 561.958036,1807.16385 562.095536,1807.30135 L565.662286,1809.96541 C565.799786,1810.10291 565.941411,1810.0431 565.941411,1809.83616 L565.941411,1808.11741 L581.816411,1808.11741 L581.816411,1806.05491 L565.941411,1806.05491 L565.941411,1804.33616 C565.941411,1804.18147 565.866474,1804.1141 565.769536,1804.14297 C565.737224,1804.1526 565.696661,1804.17322 565.662286,1804.2076 Z"
+                    id="Shape"
+                    sketch:type="MSShapeGroup"
+                    transform="translate(571.904411, 1807.088000) rotate(-270.000000) translate(-571.904411, -1807.088000) "
+                  ></path>
+                </g>
+              </g></svg
+          ></span>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
