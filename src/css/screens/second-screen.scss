@@ -7,7 +7,10 @@
   padding: 50px;
 
   h2 {
+    text-align: center;
 
+    font-size: 42px;
+    font-weight: 700;
   }
 
   &__items {
@@ -96,6 +99,10 @@
 
   .second-section {
     padding: 50px 5px;
+
+    h2 {
+      font-size: 28px;
+    }
   }
 
   .second-section__items__item {
