@@ -1,0 +1,120 @@
+.second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 50px;
+
+  h2 {
+
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    &__item {
+      max-width: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      text-align: center;
+
+      border-right: 2px solid #f26522;
+      padding: 20px;
+
+
+
+      &:last-child {
+        border: none;
+      }
+
+      & > img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      &__counter {
+        color: #f26522;
+        font-weight: 700;
+        margin-top: 20px;
+
+        &:before, &:after {
+          content: '-';
+          margin: 0 4px;
+        }
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      &__description {
+        flex: 1;
+
+        font-size: 16px;
+        line-height: 20px;
+
+        min-height: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+    .second-section__items__item:nth-child(3) {
+      border-right: none;
+    }
+}
+
+@media screen and (max-width: 915px) {
+  .second-section__items__item:nth-child(1) {
+    border-right: none;
+    border-bottom: 2px solid #f26522;
+  }
+  .second-section__items__item:nth-child(2) {
+    border-right: none;
+    border-left: 2px solid #f26522;
+    border-bottom: 2px solid #f26522;
+  }
+  .second-section__items__item:nth-child(3) {
+    border-right: 2px solid #f26522;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .second-section {
+    padding: 50px 5px;
+  }
+
+  .second-section__items__item {
+    padding: 30px 10px;
+  }
+
+  .second-section__items__item:nth-child(1) {
+    border-right: none;
+    border-left: none;
+  }
+  .second-section__items__item:nth-child(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .second-section__items__item:nth-child(3) {
+    border-right: none;
+    border-left: none;
+  }
+  .second-section__items__item:nth-child(4) {
+    border-top: 2px solid #f26522;
+  }
+}
