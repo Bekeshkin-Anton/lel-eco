@@ -1,4 +1,4 @@
-.first-screen {
+.first-section {
   background-image: url(../img/main-bg.jpg);
   background-size: cover;
 
@@ -146,7 +146,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .first-screen {
+  .first-section {
     &__root {
       gap: 30px;
     }
@@ -179,7 +179,7 @@
 
 
 @media screen and (max-width: 768px){
-  .first-screen {
+  .first-section {
     &__root {
       flex-direction: column;
     }
@@ -187,7 +187,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .first-screen {
+  .first-section {
     &__offer {
       h1 {
         span:first-child {
