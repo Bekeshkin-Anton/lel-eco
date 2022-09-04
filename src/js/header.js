@@ -12,7 +12,7 @@ class Header {
 
     findDOMElements() {
         this.$header = document.querySelector('.header');
-
+        this.$expandButton = this.$header.querySelector('.header__elem--expand-button');
     }
 
     subscribe() {
@@ -21,6 +21,9 @@ class Header {
         }
 
         window.addEventListener('scroll', this.pageScrollHandler.bind(this));
+        this.$expandButton.addEventListener('click', () => {
+            this.$header.classList.toggle('header--collapsed');
+        })
     }
 
     pageScrollHandler(e) {
