@@ -30,3 +30,26 @@
   }
 
 }
+
+@media screen and (max-width: 962px){
+  .footer {
+    flex-direction: column-reverse;
+
+    padding: 30px 15px;
+
+    gap: 30px;
+
+    &__copyright {
+      text-align: center;
+    }
+
+    &__links {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__up-button {
+      text-align: center;
+    }
+  }
+}
