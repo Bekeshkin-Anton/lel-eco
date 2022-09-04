@@ -1,12 +1,9 @@
-import '../css/style.css';
 import '../css/style.scss';
 
-import header from './steps/header';
-import popup from './steps/popup';
-// import mask from './steps/mask';
-import validationForms from './steps/validationForms';
+import Header from './header';
+import AnimationController from "./animation";
 
-header();
-// mask();
-popup();
-validationForms();
+document.addEventListener('DOMContentLoaded', () => {
+    const header = new Header();
+    const animationController = new AnimationController();
+});

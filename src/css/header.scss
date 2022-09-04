@@ -14,6 +14,12 @@
   right: 0;
   z-index: 10;
 
+  transition: .5s all;
+
+  &--with-background {
+    background-color: #0009;
+  }
+
   &__elem {
 
     &--logo > img {

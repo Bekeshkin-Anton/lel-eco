@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");// создает index.html в директории с бандлом и автоматически добавляет в него ссылку на бандл
 const CopyWebpackPlugin = require('copy-webpack-plugin'); // помогает копировать изображения и статичные файлы в build
-const ESLintPlugin = require('eslint-webpack-plugin'); // подключение eslint
 
 const config = {
     entry: {
@@ -107,7 +106,6 @@ const config = {
     },
 
     plugins: [
-        new ESLintPlugin(),
         new MiniCssExtractPlugin({
             filename: 'style.css',
         }),

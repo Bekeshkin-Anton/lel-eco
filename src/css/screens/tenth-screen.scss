@@ -1,0 +1,63 @@
+.tenth-section {
+
+  .container {
+    position: relative;
+    padding: 0;
+  }
+
+
+  &__card {
+    position: absolute;
+    z-index: 100;
+
+    top: 50px;
+    left: 50px;
+
+    background-color: #fff;
+
+    padding: 50px;
+
+    max-width: 300px;
+
+    box-shadow: 0 0 5px #0003;
+
+    h2 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    p, a {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+
+  iframe {
+    z-index: -1;
+    filter: grayscale(100%);
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tenth-section__card {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .tenth-section__card {
+    position: relative;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    max-width: unset;
+    width: calc(100vw - 100px);
+
+    p, a {
+      font-size: 14px;
+    }
+  }
+}

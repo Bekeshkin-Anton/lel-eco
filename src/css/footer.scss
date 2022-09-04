@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px;
+  background-color: #000;
+  color: #FFF;
+
+  &__copyright {
+    width: 200px;
+  }
+
+  &__up-button {
+    width: 200px;
+    text-align: right;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+      color: #FFF;
+    }
+  }
+
+}
