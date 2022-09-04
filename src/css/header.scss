@@ -105,6 +105,31 @@
     flex-direction: column;
 
     padding: 48px 16px;
+    position: relative;
+
+    .header__elem--nav {
+      padding-left: 0;
+    }
+
+    .header__elem--expand-button {
+      position: absolute;
+      left: 16px;
+      top: 32px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      height: 28px;
+      width: 36px;
+
+      span {
+        content: '';
+        width: 36px;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
 
     &__elem {
       &--nav {
@@ -125,6 +150,29 @@
 
       &--popup-button {
         gap: 8px;
+      }
+    }
+
+    &--collapsed {
+      flex-direction: row;
+      padding: 16px;
+
+      .header__elem--expand-button {
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+
+      .header__elem--logo {
+        display: none;
+      }
+
+      .header__elem--nav {
+        display: none;
+      }
+
+      .header__elem--popup-button {
+        display: none;
       }
     }
   }
