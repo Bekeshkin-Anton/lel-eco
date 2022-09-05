@@ -7,7 +7,6 @@ class Header {
         } catch (e) {
             console.log(`An error occurred. Error description: ${e.message}`);
         }
-
     }
 
     findDOMElements() {

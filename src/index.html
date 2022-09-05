@@ -63,15 +63,20 @@
             <p>
                 Наши специалисты готовы оценить и&nbsp;вывезти вашу технику в&nbsp;любое удобное для вас время.
             </p>
-            <form action="">
+            <form>
                 <label for="first-section__form--name"></label>
-                <input type="text" name="name" id="first-section__form--name">
-
-                <label for="first-section__form--phone"></label>
-                <input type="text" name="phone" id="first-section__form--phone">
+                <input type="text" name="name" id="first-section__form--name" placeholder="Имя" required>
 
                 <label for="first-section__form--email"></label>
-                <input type="text" name="email" id="first-section__form--email">
+                <input type="email" name="email" id="first-section__form--email" placeholder="Email">
+
+                <label for="first-section__form--phone"></label>
+                <input type="tel" name="phone" id="first-section__form--phone" placeholder="Телефон" required>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="privacy" id="first-section__form--privacy" required>
+                    <label for="first-section__form--privacy"><span>Я согласен с условиями <a href="#">Политики конфиденциальнсти</a></span></label>
+                </div>
 
                 <button>Отправить</button>
             </form>
@@ -224,7 +229,7 @@
 
 <section class="sixth-section">
     <div class="container">
-        <form action="" class="sixth-section__form">
+        <form class="sixth-section__form">
             <h2>
                 Закажите обратный звонок
             </h2>
@@ -234,15 +239,15 @@
 
             <div class="sixth-section__form-row">
                 <label for="sixth-section__form--name"></label>
-                <input id="sixth-section__form--name" type="text" name="name" placeholder="Ваше имя">
+                <input id="sixth-section__form--name" type="text" name="name" placeholder="Ваше имя" required>
                 <label for="sixth-section__form--phone"></label>
-                <input id="sixth-section__form--phone" type="text" name="phone" placeholder="Ваш телефон">
+                <input id="sixth-section__form--phone" type="tel" name="phone" placeholder="Ваш телефон" required>
             </div>
 
             <div class="sixth-section__form-row">
 
                 <div class="checkbox">
-                    <input id="sixth-section__form--privacy" type="checkbox" name="privacy">
+                    <input id="sixth-section__form--privacy" type="checkbox" name="privacy" required>
                     <label for="sixth-section__form--privacy"><span>Я согласен с условиями <a href="#">Политики конфиденциальнсти</a></span></label>
                 </div>
 
@@ -301,12 +306,12 @@
         <form class="eighth-section__form">
             <div class="eighth-section__form__row">
                 <label for="eighth-section__form--phone"></label>
-                <input type="text" name="phone" id="eighth-section__form--phone" placeholder="Ваш телефон">
+                <input type="tel" name="phone" id="eighth-section__form--phone" placeholder="Ваш телефон" required>
 
                 <button>Заказать вывоз</button>
             </div>
             <div class="checkbox">
-                <input type="checkbox" name="privacy" id="eighth-section__form--privacy">
+                <input type="checkbox" name="privacy" id="eighth-section__form--privacy" required>
                 <label for="eighth-section__form--privacy"><span>Я согласен с условиями <a href="#">Политики конфиденциальнсти</a></span></label>
             </div>
         </form>
