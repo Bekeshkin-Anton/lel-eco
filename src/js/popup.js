@@ -45,7 +45,11 @@ export default class PopupController {
 
     openHandler(e) {
         e.preventDefault();
-        this.$forms.find(x => x.id === e.target.dataset['popup']).style.display = 'flex';
+        this.open(e.target.dataset['popup'])
+    }
+
+    open(name) {
+        this.$forms.find(x => x.id === name).style.display = 'flex';
     }
 
     closeHandler(e) {
