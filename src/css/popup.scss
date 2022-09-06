@@ -23,6 +23,26 @@
 
     position: relative;
 
+    .privacy-text {
+      max-width: 1170px;
+      max-height: 95vh;
+      overflow-y: scroll;
+      text-align: left;
+      padding: 30px;
+
+      h4 {
+        font-size: 20px;
+      }
+
+      h5 {
+        font-size: 16px;
+      }
+      .li, .descr {
+        font-size: 16px;
+        margin: 8px 0;
+      }
+    }
+
     &__close-button {
       cursor: pointer;
 
@@ -146,6 +166,10 @@
 
     h2, p {
       margin: 15px 30px;
+    }
+
+    .privacy-text {
+      padding: 10px;
     }
   }
 }

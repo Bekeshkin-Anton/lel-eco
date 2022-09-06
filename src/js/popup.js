@@ -44,12 +44,11 @@ export default class PopupController {
     }
 
     openHandler(e) {
+        e.preventDefault();
         this.$forms.find(x => x.id === e.target.dataset['popup']).style.display = 'flex';
     }
 
     closeHandler(e) {
-        console.log(e)
-
         if (e.target.classList.contains('popup__body__close-button')) {
             this.$forms.find(x => x.id === e.target.dataset['popup']).style.display = 'none';
         }
