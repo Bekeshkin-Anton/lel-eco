@@ -36,7 +36,7 @@
         <span>С 11:00 до 19:00 Пн-Пт</span>
     </div>
     <div class="header__elem header__elem--popup-button">
-        <a class="js--popup-button" href="#callback-popup">Обратный звонок</a>
+        <a class="js--popup-button" href="#callback-popup" data-popup="callback">Обратный звонок</a>
         <span>СПБ и Лен. область</span>
     </div>
 </header>
@@ -226,7 +226,6 @@
     </div>
 </section>
 
-
 <section class="sixth-section">
     <div class="container">
         <form class="sixth-section__form">
@@ -317,7 +316,6 @@
         </form>
     </div>
 </section>
-
 
 <section class="ninth-section">
     <div class="container">
@@ -433,5 +431,30 @@
         К началу
     </div>
 </footer>
+
+<div class="popup" id="callback">
+    <div class="popup__body">
+        <div class="popup__body__close-button" data-popup="callback">&times;</div>
+
+        <img src="./img/popup.jpg" alt="ОБРАТНЫЙ ЗВОНОК">
+        <h2>Обратный звонок</h2>
+        <p>Отправьте заявку и мы обязательно перезвоним вам!</p>
+
+        <form class="popup__body__form">
+            <label for="popup__body__form--name"></label>
+            <input id="popup__body__form--name" type="text" name="name" placeholder="Ваше имя" required>
+
+            <label for="popup__body__form--phone"></label>
+            <input id="popup__body__form--phone" type="tel" name="phone" placeholder="Номер телефона">
+
+            <div class="checkbox">
+                <input type="checkbox" name="privacy" id="popup__body__form--privacy" required>
+                <label for="popup__body__form--privacy"><span>Я согласен с условиями <a href="#">Политики конфиденциальнсти</a></span></label>
+            </div>
+
+            <button>Отправить</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
