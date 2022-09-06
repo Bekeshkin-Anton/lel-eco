@@ -1,6 +1,7 @@
 
 export class FirstScreenForm {
-    constructor() {
+    constructor(popupController) {
+        this.popupController = popupController;
         try {
             this.findDOMElements();
             this.subscribe();
@@ -36,7 +37,7 @@ export class FirstScreenForm {
         });
 
         if(response.ok) {
-            alert('OK');
+            this.popupController.open('success');
         }
     }
 
@@ -46,7 +47,8 @@ export class FirstScreenForm {
 }
 
 export class SixthScreenForm {
-    constructor() {
+    constructor(popupController) {
+        this.popupController = popupController;
         try {
             this.findDOMElements();
             this.subscribe();
@@ -81,7 +83,7 @@ export class SixthScreenForm {
         });
 
         if(response.ok) {
-            alert('OK');
+            this.popupController.open('success');
         }
     }
 
@@ -135,7 +137,9 @@ export class EighthScreenForm {
 }
 
 export class PopupForm {
-    constructor() {
+    constructor(popupController) {
+        this.popupController = popupController;
+
         try {
             this.findDOMElements();
             this.subscribe();
@@ -170,7 +174,7 @@ export class PopupForm {
         });
 
         if(response.ok) {
-            alert('OK');
+            this.popupController.open('success');
         }
     }
 

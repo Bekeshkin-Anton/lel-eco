@@ -25,11 +25,11 @@
         <img src="./img/logo.png" alt="logo"/>
     </div>
     <ul class="header__elem header__elem--nav">
-        <li class="nav__elem"><a href="#why-we">Почему мы?</a></li>
-        <li class="nav__elem"><a href="#individuals">Физ. лицам</a></li>
-        <li class="nav__elem"><a href="#legal-entities">Юр. лицам</a></li>
-        <li class="nav__elem"><a href="#reviews">Отзывы</a></li>
-        <li class="nav__elem"><a href="#map">Контакты</a></li>
+        <li class="nav__elem"><a href="#" class="js--scroll-to" data-element=".second-section">Почему мы?</a></li>
+        <li class="nav__elem"><a href="#" class="js--scroll-to" data-element=".fifth-section">Физ. лицам</a></li>
+        <li class="nav__elem"><a href="#" class="js--scroll-to" data-element=".seventh-section">Юр. лицам</a></li>
+        <li class="nav__elem"><a href="#" class="js--scroll-to" data-element=".ninth-section">Отзывы</a></li>
+        <li class="nav__elem"><a href="#" class="js--scroll-to" data-element=".tenth-section">Контакты</a></li>
     </ul>
     <div class="header__elem header__elem--phone">
         <a href="tel:+79117112913">+7 (911) 711-29-13</a>
@@ -427,13 +427,13 @@
         © 2022 Лель-ЭКО. Покупка и утилизация бытовой техники.
     </div>
     <div class="footer__links">
-        <a href="">Почему мы?</a>
-        <a href="">Физ.лицам</a>
-        <a href="">Юр.лицам</a>
-        <a href="">Отзывы</a>
-        <a href="">Контакты</a>
+        <a href="#" class="js--scroll-to" data-element=".second-section">Почему мы?</a>
+        <a href="#" class="js--scroll-to" data-element=".fifth-section">Физ.лицам</a>
+        <a href="#" class="js--scroll-to" data-element=".seventh-section">Юр.лицам</a>
+        <a href="#" class="js--scroll-to" data-element=".ninth-section">Отзывы</a>
+        <a href="#" class="js--scroll-to" data-element=".tenth-section">Контакты</a>
     </div>
-    <div class="footer__up-button">
+    <div class="footer__up-button js--scroll-to" data-element=".first-section">
         К началу
     </div>
 </footer>
@@ -462,6 +462,16 @@
 
             <button>Отправить</button>
         </form>
+    </div>
+</div>
+
+<div class="popup" id="success">
+    <div class="popup__body">
+        <div class="popup__body__close-button" data-popup="success">&times;</div>
+
+        <img src="./img/popup.jpg" alt="ОБРАТНЫЙ ЗВОНОК">
+        <h2>Спасибо</h2>
+        <p style="margin-bottom: 30px;">Ваша заявка принята! Мы свяжемся с Вами в ближайшее время</p>
     </div>
 </div>
 
