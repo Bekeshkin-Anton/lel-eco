@@ -28,7 +28,7 @@ export class FirstScreenForm {
             email:  this.$emailInput.value,
         };
 
-        const response = await fetch('http://localhost:5005/api/submit-form', {
+        const response = await fetch('https://лель-эко.рф/api/submit-form', {
             method: 'POST',
             body: JSON.stringify(formData),
             headers: {
@@ -74,7 +74,7 @@ export class SixthScreenForm {
             email:  'Отсутствует',
         };
 
-        const response = await fetch('http://localhost:5005/api/submit-form', {
+        const response = await fetch('https://лель-эко.рф/api/submit-form', {
             method: 'POST',
             body: JSON.stringify(formData),
             headers: {
@@ -165,7 +165,7 @@ export class PopupForm {
             email:  'Отсутствует',
         };
 
-        const response = await fetch('http://localhost:5005/api/submit-form', {
+        const response = await fetch('https://лель-эко.рф/api/submit-form', {
             method: 'POST',
             body: JSON.stringify(formData),
             headers: {
